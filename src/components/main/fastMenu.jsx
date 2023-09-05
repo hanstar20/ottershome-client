@@ -1,9 +1,9 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import payMenu from '../../public/assets/img/main/이용요금.png'
-import timeMenu from '../../public/assets/img/main/운영시간.png'
-import trafficMenu from '../../public/assets/img/main/교통안내.png'
-import mapMenu from '../../public/assets/img/main/이수달 지도.png'
+import payMenu from '../../public/assets/img/main/fee.png'
+import timeMenu from '../../public/assets/img/main/time.png'
+import trafficMenu from '../../public/assets/img/main/directions.png'
+import mapMenu from '../../public/assets/img/main/map.png'
 import styled from 'styled-components'
 
 const MenuContainer = styled.div`
