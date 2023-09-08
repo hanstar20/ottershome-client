@@ -157,7 +157,7 @@ export default function SideMenu() {
                       수달
                     </StyledLink>
                   </div>
-                  <div>
+                  {/* <div>
                     <StyledLink to="/animal" onClick={handleToggleClick}>
                       개
                     </StyledLink>
@@ -191,7 +191,7 @@ export default function SideMenu() {
                     <StyledLink to="/animal" onClick={handleToggleClick}>
                       염소
                     </StyledLink>
-                  </div>
+                  </div> */}
                 </CollapseDiv>
               </Collapse>
             </div>
@@ -225,7 +225,7 @@ export default function SideMenu() {
                   </div>
                   <div>
                     <StyledLink to="/video" onClick={handleToggleClick}>
-                      영상 클립
+                      클립영상
                     </StyledLink>
                   </div>
                 </CollapseDiv>
