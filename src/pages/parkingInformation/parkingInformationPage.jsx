@@ -3,12 +3,17 @@ import React from 'react'
 import styled from 'styled-components'
 
 const ContentContainer = styled.div`
-  padding-top: 60px;
-  background: #f3deba;
+  margin-top: 60px;
+  background: #ffffff;
   min-height: 800px;
 `
 
-const ContentWrapper = styled.div``
+const ContentWrapper = styled.div`
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+`
 
 export default function ParkingInformation() {
   return (

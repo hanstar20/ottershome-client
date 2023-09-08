@@ -40,12 +40,12 @@ export default function FastMenu() {
     <MenuContainer>
       <MenuWrapper>
         <Menu>
-          <Link to="/usageInformation">
+          <Link to="/feeInformation">
             <MenuLogo alt="" src={payMenu} />
           </Link>
         </Menu>
         <Menu>
-          <Link to="/usageInformation">
+          <Link to="/timeInformation">
             <MenuLogo alt="" src={timeMenu} />
           </Link>
         </Menu>
@@ -55,7 +55,7 @@ export default function FastMenu() {
           </Link>
         </Menu>
         <Menu>
-          <Link to="/">
+          <Link to="/guideMap">
             <MenuLogo alt="" src={mapMenu} />
           </Link>
         </Menu>

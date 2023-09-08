@@ -77,6 +77,16 @@ export default function SideMenu() {
                       이웃집수달 소개
                     </StyledLink>
                   </div>
+                  <div>
+                    <StyledLink to="/directions" onClick={handleToggleClick}>
+                      오시는길
+                    </StyledLink>
+                  </div>
+                  <div>
+                    <StyledLink to="/guideMap" onClick={handleToggleClick}>
+                      가이드맵
+                    </StyledLink>
+                  </div>
                 </CollapseDiv>
               </Collapse>
             </div>
@@ -94,7 +104,7 @@ export default function SideMenu() {
                 <MenuItemWrapper>
                   <ParentItemWrapper>
                     <MenuLogo alt="dolce" src={dolce} />
-                    <ParentMenu>동물원 안내</ParentMenu>
+                    <ParentMenu>이용안내</ParentMenu>
                   </ParentItemWrapper>
                   <MenuArrowWrapper>
                     <MenuArrow isOpen={collapseToggle[1]} />
@@ -105,23 +115,15 @@ export default function SideMenu() {
                 <CollapseDiv>
                   <div>
                     <StyledLink
-                      to="/usageInformation"
+                      to="/feeInformation"
                       onClick={handleToggleClick}
                     >
-                      이용요금 및 운영시간
+                      이용요금
                     </StyledLink>
                   </div>
                   <div>
-                    <StyledLink to="/directions" onClick={handleToggleClick}>
-                      오시는길
-                    </StyledLink>
-                  </div>
-                  <div>
-                    <StyledLink
-                      to="/parkingInformation"
-                      onClick={handleToggleClick}
-                    >
-                      주차 안내
+                    <StyledLink to="/timeInformation" onClick={handleToggleClick}>
+                      운영시간
                     </StyledLink>
                   </div>
                 </CollapseDiv>
@@ -141,7 +143,7 @@ export default function SideMenu() {
                 <MenuItemWrapper>
                   <ParentItemWrapper>
                     <MenuLogo alt="mocha" src={mocha} />
-                    <ParentMenu>동물원 친구들</ParentMenu>
+                    <ParentMenu>이수달 친구들</ParentMenu>
                   </ParentItemWrapper>
                   <MenuArrowWrapper>
                     <MenuArrow isOpen={collapseToggle[2]} />
@@ -224,11 +226,6 @@ export default function SideMenu() {
                   <div>
                     <StyledLink to="/video" onClick={handleToggleClick}>
                       영상 클립
-                    </StyledLink>
-                  </div>
-                  <div>
-                    <StyledLink to="/faq" onClick={handleToggleClick}>
-                      자주하는 질문
                     </StyledLink>
                   </div>
                 </CollapseDiv>

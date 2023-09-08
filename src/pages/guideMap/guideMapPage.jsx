@@ -16,11 +16,11 @@ const ContentWrapper = styled.div`
   align-items: center;
 `
 
-export default function Directions() {
+export default function GuideMap() {
   return (
     <ContentContainer>
       <ContentWrapper>
-        <h1>오시는 길</h1>
+        <h1>가이드맵</h1>
         <h1>페이지 준비중입니다.</h1>
       </ContentWrapper>
     </ContentContainer>

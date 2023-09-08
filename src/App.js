@@ -5,13 +5,15 @@ import Footer from './components/layout/footer'
 import SideMenu from './components/layout/sideMenu'
 import MainContent from './pages/main/mainPage'
 import Introduction from './pages/introduction/introductionPage'
-import UsageInformation from './pages/usageInformation/usageInformationPage'
+import FeeInformation from './pages/feeInfomation/feeInformationPage'
+import TimeInformation from './pages/timeInfomation/timeInformationPage'
 import Video from './pages/video/videoPage'
 import ParkingInformation from './pages/parkingInformation/parkingInformationPage'
 import Notice from './pages/notice/noticePage'
 import FAQ from './pages/faq/faqPage'
 import Directions from './pages/directions/directoinsPage'
 import Animal from './pages/animal/animalPage'
+import GuideMap from './pages/guideMap/guideMapPage'
 
 // styled components
 import styled from 'styled-components'
@@ -25,7 +27,8 @@ function App() {
           <Routes>
             <Route path="/" element={<MainContent />} exact={true} />
             <Route path="/introduction" element={<Introduction />} />
-            <Route path="/usageInformation" element={<UsageInformation />} />
+            <Route path="/feeInformation" element={<FeeInformation />} />
+            <Route path="/timeInformation" element={<TimeInformation />} />
             <Route path="/video" element={<Video />} />
             <Route
               path="/parkingInformation"
@@ -35,6 +38,7 @@ function App() {
             <Route path="/faq" element={<FAQ />} />
             <Route path="/directions" element={<Directions />} />
             <Route path="/animal" element={<Animal />} />
+            <Route path="/guideMap" element={<GuideMap />} />
           </Routes>
           <Footer />
         </ContentWrapper>

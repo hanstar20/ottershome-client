@@ -3,18 +3,25 @@ import React from 'react'
 import styled from 'styled-components'
 
 const ContentContainer = styled.div`
-  padding-top: 60px;
-  background: #f3deba;
+  margin-top: 60px;
+  background: #ffffff;
   min-height: 800px;
 `
 
-const ContentWrapper = styled.div``
+const ContentWrapper = styled.div`
+  height: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+`
 
 export default function Animal() {
   return (
     <ContentContainer>
       <ContentWrapper>
-        <h1>오동물친구들 페이지입니다.</h1>
+        <h1>이수달 친구들</h1>
+        <h1>페이지 준비중입니다.</h1>
       </ContentWrapper>
     </ContentContainer>
   )
