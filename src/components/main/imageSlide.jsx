@@ -2,9 +2,9 @@ import React from 'react'
 
 import styled from 'styled-components'
 
-import Sample1 from '../../public/assets/img/sample_1.jpeg'
-import Sample2 from '../../public/assets/img/sample_2.jpeg'
-import Sample3 from '../../public/assets/img/sample_3.jpeg'
+import Sample1 from '../../public/assets/img/main/banner_01.png'
+import Sample2 from '../../public/assets/img/main/banner_02.png'
+import Sample3 from '../../public/assets/img/main/banner_03.png'
 
 import { Swiper, SwiperSlide } from 'swiper/react'
 import SwiperCore, { Navigation, Autoplay, Pagination } from 'swiper'

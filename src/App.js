@@ -38,9 +38,9 @@ function App() {
           </Routes>
           <Footer />
         </ContentWrapper>
-        <Wrapper>
+        <SideMenuWrapper>
           <SideMenu />
-        </Wrapper>
+        </SideMenuWrapper>
       </Container>
     </BrowserRouter>
   )
@@ -48,7 +48,7 @@ function App() {
 
 const Container = styled.div``
 
-const Wrapper = styled.div``
+const SideMenuWrapper = styled.div``
 
 const ContentWrapper = styled.div`
   display: flex;
