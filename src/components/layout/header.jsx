@@ -3,7 +3,8 @@ import { useDispatch } from 'react-redux'
 import { menuToggle } from '../../redux/slice/menuToggle'
 import { Link } from 'react-router-dom'
 
-import headerLogo from '../../public/assets/img/Otters_home.png'
+import HamburgerMenuImg from '../../public/assets/img/layout/hamburger_menu.png'
+
 // styled components
 import styled from 'styled-components'
 
@@ -17,16 +18,12 @@ export default function Header() {
   return (
     <HeaderContainer>
       <HeaderWrapper>
-        <HamburgerMenu onClick={handleToggleClick}>
-          <HamburgerLine />
-          <HamburgerLine />
-          <HamburgerLine />
-        </HamburgerMenu>
+        <HamburgerMenu onClick={handleToggleClick} src={HamburgerMenuImg} />
       </HeaderWrapper>
       <HeaderWrapper>
-        <Link to="/">
-          <HeaderLogo alt="Otters Home" src={headerLogo} />
-        </Link>
+        <HeaderLogo to="/">
+          이웃집수달
+        </HeaderLogo>
       </HeaderWrapper>
       <HeaderWrapper />
     </HeaderContainer>
@@ -37,29 +34,35 @@ const HeaderContainer = styled.div`
   display: flex;
   justify-content: space-between;
   background: #ffffff;
-  height: 60px;
-  position: fixed;
-  width: 100%;
+  position: sticky;
+  top: 0;
+  width: auto;
   z-index: 8000;
 `
 
 const HeaderWrapper = styled.div`
-  margin: 5px 25px;
+  height: 49px;
+  margin: 0 25px;
   display: flex;
   align-items: center;
+
+  &:nth-child(3) {
+    width:22px;
+  }
 `
 
-const HeaderLogo = styled.img`
+const HeaderLogo = styled(Link)`
   width: 90px;
-`
-
-const HamburgerMenu = styled.div`
-  width: 22px;
+  font-family: var(--font-gasoekOne);
+  font-size: 20px;
+  text-decoration: none;
+  color: #635f54;
   cursor: pointer;
 `
 
-const HamburgerLine = styled.div`
-  height: 2px;
-  background-color: black;
-  margin: 5px 0;
+const HamburgerMenu = styled.img`
+  height: 29px;
+  width: 29px;
+  cursor: pointer;
 `
+

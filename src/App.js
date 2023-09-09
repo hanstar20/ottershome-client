@@ -42,22 +42,29 @@ function App() {
           </Routes>
           <Footer />
         </ContentWrapper>
-        <SideMenuWrapper>
+        {/* <SideMenuWrapper>
           <SideMenu />
-        </SideMenuWrapper>
+        </SideMenuWrapper> */}
       </Container>
     </BrowserRouter>
   )
 }
 
-const Container = styled.div``
+const Container = styled.div`
+  width:100vw;
+  height:100vh;
+  display: flex;
+  justify-content: center;
+  background-color: red;
+`
 
 const SideMenuWrapper = styled.div``
 
 const ContentWrapper = styled.div`
   display: flex;
   flex-direction: column;
-  /* max-width: 500px; */
+  max-width: 768px;
+  height: auto;
 `
 
 export default App

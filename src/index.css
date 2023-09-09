@@ -15,3 +15,12 @@ code {
 .ReactCollapse--collapse {
   transition: height 300ms;
 }
+
+@font-face {
+	font-family: "GasoekOne";
+	src: url(./public/assets/fonts/GasoekOne-Regular.ttf);
+}
+
+:root {
+	--font-gasoekOne: "GasoekOne";
+}
