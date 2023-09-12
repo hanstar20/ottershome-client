@@ -12,7 +12,7 @@ const ContentContainer = styled.div`
 `
 
 const ContentWrapper = styled.div`
-  height: 100vw;
+  /* height: 100vw; */
   display: flex;
   flex-direction: column;
   align-items: center;
