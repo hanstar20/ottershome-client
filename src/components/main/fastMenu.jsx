@@ -9,7 +9,7 @@ import styled from 'styled-components'
 const MenuContainer = styled.div`
   overflow: hidden;
   position: relative;
-  top: -25px;
+
   z-index: 5;
 `
 
