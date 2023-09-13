@@ -3,7 +3,6 @@ import React from 'react'
 import styled from 'styled-components'
 
 const ContentContainer = styled.div`
-  margin-top: 60px;
   background: #ffffff;
   min-height: 800px;
 `

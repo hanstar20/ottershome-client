@@ -37,9 +37,9 @@ const HeaderContainer = styled.div`
   display: flex;
   justify-content: space-between;
   background: #ffffff;
-  height: 60px;
-  position: fixed;
-  width: 100%;
+  position: sticky;
+  top: 0;
+  width: auto;
   z-index: 8000;
 `
 
@@ -47,6 +47,10 @@ const HeaderWrapper = styled.div`
   margin: 5px 25px;
   display: flex;
   align-items: center;
+
+  &:nth-child(3) {
+    width:22px;
+  }
 `
 
 const HeaderLogo = styled.img`

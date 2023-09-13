@@ -7,7 +7,6 @@ import FastMenu from '../../components/main/fastMenu'
 import VideoSlide from '../../components/main/videoSlide'
 
 const ContentContainer = styled.div`
-  padding-top: 60px;
   background: #f6f6f6;
 `
 
