@@ -102,7 +102,7 @@ export default function Introduction() {
       <ContentTitle>이웃집수달 소개</ContentTitle>
       <ContentBody>
         <div>
-          "동물들과 교감하는 공간"
+          "우리집으로 놀러오세요"
         </div>
         <div>
           이웃집수달
