@@ -195,7 +195,7 @@ export default function SideMenu() {
                   </div>
                   <div>
                     <StyledLink to="/video" onClick={handleToggleClick}>
-                      클립영상
+                      방송자료
                     </StyledLink>
                   </div>
                 </CollapseDiv>
