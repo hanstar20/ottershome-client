@@ -83,7 +83,7 @@ export default function SideMenu() {
                     </StyledLink>
                   </div>
                   <div>
-                    <StyledLink to="/guideMap" onClick={handleToggleClick}>
+                    <StyledLink to="/guide-map" onClick={handleToggleClick}>
                       가이드맵
                     </StyledLink>
                   </div>
@@ -115,15 +115,15 @@ export default function SideMenu() {
                 <CollapseDiv>
                   <div>
                     <StyledLink
-                      to="/feeInformation"
+                      to="/usage-info"
                       onClick={handleToggleClick}
                     >
-                      이용요금
+                      이용요금 & 운영시간
                     </StyledLink>
                   </div>
                   <div>
-                    <StyledLink to="/timeInformation" onClick={handleToggleClick}>
-                      운영시간
+                    <StyledLink to="/group-program-info" onClick={handleToggleClick}>
+                      단체 프로그램
                     </StyledLink>
                   </div>
                 </CollapseDiv>
@@ -154,44 +154,14 @@ export default function SideMenu() {
                 <CollapseDiv>
                   <div>
                     <StyledLink to="/animal" onClick={handleToggleClick}>
-                      수달
-                    </StyledLink>
-                  </div>
-                  {/* <div>
-                    <StyledLink to="/animal" onClick={handleToggleClick}>
-                      개
+                      수달 가족들
                     </StyledLink>
                   </div>
                   <div>
                     <StyledLink to="/animal" onClick={handleToggleClick}>
-                      고양이
+                      동물 가족들
                     </StyledLink>
                   </div>
-                  <div>
-                    <StyledLink to="/animal" onClick={handleToggleClick}>
-                      토끼
-                    </StyledLink>
-                  </div>
-                  <div>
-                    <StyledLink to="/animal" onClick={handleToggleClick}>
-                      거북이
-                    </StyledLink>
-                  </div>
-                  <div>
-                    <StyledLink to="/animal" onClick={handleToggleClick}>
-                      앵무새
-                    </StyledLink>
-                  </div>
-                  <div>
-                    <StyledLink to="/animal" onClick={handleToggleClick}>
-                      땅콩
-                    </StyledLink>
-                  </div>
-                  <div>
-                    <StyledLink to="/animal" onClick={handleToggleClick}>
-                      염소
-                    </StyledLink>
-                  </div> */}
                 </CollapseDiv>
               </Collapse>
             </div>

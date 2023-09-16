@@ -16,11 +16,11 @@ const ContentWrapper = styled.div`
   align-items: center;
 `
 
-export default function TimeInformation() {
+export default function GroupProgramInfo() {
   return (
     <ContentContainer>
       <ContentWrapper>
-        <h1>이용시간</h1>
+        <h1>이용요금</h1>
         <h1>페이지 준비중입니다.</h1>
       </ContentWrapper>
     </ContentContainer>

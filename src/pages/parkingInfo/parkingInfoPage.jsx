@@ -15,7 +15,7 @@ const ContentWrapper = styled.div`
   align-items: center;
 `
 
-export default function ParkingInformation() {
+export default function ParkingInfo() {
   return (
     <ContentContainer>
       <ContentWrapper>

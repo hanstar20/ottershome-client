@@ -5,10 +5,10 @@ import Footer from './components/layout/footer'
 import SideMenu from './components/layout/sideMenu'
 import MainContent from './pages/main/mainPage'
 import Introduction from './pages/introduction/introductionPage'
-import FeeInformation from './pages/feeInfomation/feeInformationPage'
-import TimeInformation from './pages/timeInfomation/timeInformationPage'
+import UsageInfo from './pages/usageInfo/usageInfoPage'
+import GroupProgramInfo from './pages/groupProgramInfo/groupProgramInfoPage'
 import Video from './pages/video/videoPage'
-import ParkingInformation from './pages/parkingInformation/parkingInformationPage'
+import ParkingInfo from './pages/parkingInfo/parkingInfoPage'
 import Notice from './pages/notice/noticePage'
 import FAQ from './pages/faq/faqPage'
 import Directions from './pages/directions/directoinsPage'
@@ -27,18 +27,18 @@ function App() {
           <Routes>
             <Route path="/" element={<MainContent />} exact={true} />
             <Route path="/introduction" element={<Introduction />} />
-            <Route path="/feeInformation" element={<FeeInformation />} />
-            <Route path="/timeInformation" element={<TimeInformation />} />
+            <Route path="/usage-info" element={<UsageInfo />} />
+            <Route path="/group-program-info" element={<GroupProgramInfo />} />
             <Route path="/video" element={<Video />} />
             <Route
-              path="/parkingInformation"
-              element={<ParkingInformation />}
+              path="/parking-info"
+              element={<ParkingInfo />}
             />
             <Route path="/notice" element={<Notice />} />
             <Route path="/faq" element={<FAQ />} />
             <Route path="/directions" element={<Directions />} />
             <Route path="/animal" element={<Animal />} />
-            <Route path="/guideMap" element={<GuideMap />} />
+            <Route path="/guide-map" element={<GuideMap />} />
           </Routes>
           <Footer />
         </ContentWrapper>
