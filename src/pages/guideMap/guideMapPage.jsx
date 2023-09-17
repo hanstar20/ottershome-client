@@ -2,13 +2,15 @@ import React from "react";
 
 import styled from "styled-components";
 
+import GuideTable from "../..//components/guideMap/guideTable";
+import Map from "../../public/assets/img/guide_map/guide_map.png";
+
 const ContentContainer = styled.div`
 	background: #ffffff;
-	min-height: 800px;
 `;
 
 const ContentWrapper = styled.div`
-	height: 100vw;
+	height: auto;
 	display: flex;
 	flex-direction: column;
 `;
@@ -38,13 +40,23 @@ const ContentTitle = styled.div`
 	}
 `;
 
+const ContentBody = styled.div`
+	margin: 3.02vw 4.53vw;
+	display: flex;
+	flex-direction: column;
+`;
+
+const GuideMapImg = styled.img``;
+
 export default function GuideMap() {
 	return (
 		<ContentContainer>
 			<ContentWrapper>
 				<ContentTitle>가이드맵</ContentTitle>
-				<h1>가이드맵</h1>
-				<h1>페이지 준비중입니다.</h1>
+				<ContentBody>
+					<GuideMapImg alt='guide-map' src={Map} />
+					<GuideTable />
+				</ContentBody>
 			</ContentWrapper>
 		</ContentContainer>
 	);
