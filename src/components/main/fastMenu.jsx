@@ -1,38 +1,52 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import payMenu from "../../public/assets/img/main/fee.png";
-import timeMenu from "../../public/assets/img/main/time.png";
-import trafficMenu from "../../public/assets/img/main/directions.png";
-import mapMenu from "../../public/assets/img/main/map.png";
+import infoMenu from "../../public/assets/img/main/save_time.png";
+import trafficMenu from "../../public/assets/img/main/navigation.png";
+import guideMenu from "../../public/assets/img/main/travel_guide.png";
+import shopMenu from "../../public/assets/img/main/online_shop.png";
 import styled from "styled-components";
 
 const MenuContainer = styled.div`
-	overflow: hidden;
-	position: relative;
-	top: -25px;
-	z-index: 5;
+	margin: 39px 0 77px 0;
 `;
 
 const MenuWrapper = styled.div`
 	background-color: #ffffff;
 	display: flex;
-	overflow: hidden;
-	border-radius: 30px 0 30px 0;
-	box-sizing: border-box;
-	margin-right: 15px;
-	margin-left: 15px;
-	padding: 3vw 2vw;
+	justify-content: space-evenly;
+	height: 22.66vw;
 `;
 
 const Menu = styled.div`
-	width: 25%;
-	padding: 0 2vw;
+	width: 22.66vw;
+	height: auto;
+	border: solid 0.13vw #ccc;
+	border-radius: 1.04vw;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 3.65vw 0 0 0;
+	cursor: pointer;
+	background-color: #ffffff;
 `;
 
 const MenuLogo = styled.img`
 	display: block;
-	width: 100%;
-	height: auto;
+	width: auto;
+	height: 11.72vw;
+	object-fit: contain;
+`;
+
+const MenuTitle = styled.div`
+	padding: 1.3vw 0 0 0%;
+	font-size: 2.86vw;
+	font-family: "Pretendard";
+	font-weight: bold;
+	font-stretch: normal;
+	font-style: normal;
+	line-height: normal;
+	letter-spacing: normal;
+	color: #4b6d7b;
 `;
 
 export default function FastMenu() {
@@ -41,23 +55,27 @@ export default function FastMenu() {
 			<MenuWrapper>
 				<Menu>
 					<Link to='/usage-info'>
-						<MenuLogo alt='' src={payMenu} />
+						<MenuLogo alt='' src={infoMenu} />
 					</Link>
-				</Menu>
-				<Menu>
-					<Link to='/usage-info'>
-						<MenuLogo alt='' src={timeMenu} />
-					</Link>
+					<MenuTitle>이용안내</MenuTitle>
 				</Menu>
 				<Menu>
 					<Link to='/directions'>
 						<MenuLogo alt='' src={trafficMenu} />
 					</Link>
+					<MenuTitle>오시는길</MenuTitle>
 				</Menu>
 				<Menu>
 					<Link to='/guide-map'>
-						<MenuLogo alt='' src={mapMenu} />
+						<MenuLogo alt='' src={guideMenu} />
 					</Link>
+					<MenuTitle>가이드맵</MenuTitle>
+				</Menu>
+				<Menu>
+					<a href='https://ottersshop.com/'>
+						<MenuLogo alt='' src={shopMenu} />
+					</a>
+					<MenuTitle>이수달샵</MenuTitle>
 				</Menu>
 			</MenuWrapper>
 		</MenuContainer>
