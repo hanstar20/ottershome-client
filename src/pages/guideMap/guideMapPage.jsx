@@ -10,7 +10,7 @@ const ContentContainer = styled.div`
 `;
 
 const ContentWrapper = styled.div`
-	height: auto;
+	/* height: auto; */
 	display: flex;
 	flex-direction: column;
 `;
@@ -47,7 +47,8 @@ const ContentBody = styled.div`
 `;
 
 const GuideMapImg = styled.img`
-	display: block;
+	/* display: block; */
+	width: 100%;
 	object-fit: contain;
 `;
 
