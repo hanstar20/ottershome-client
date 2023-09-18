@@ -46,7 +46,9 @@ const ContentBody = styled.div`
 	flex-direction: column;
 `;
 
-const GuideMapImg = styled.img``;
+const GuideMapImg = styled.img`
+	object-fit: contain;
+`;
 
 export default function GuideMap() {
 	return (
