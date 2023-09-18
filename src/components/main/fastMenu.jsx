@@ -19,15 +19,24 @@ const MenuWrapper = styled.div`
 
 const Menu = styled.div`
 	width: 22.66vw;
-	height: auto;
+	height: 100%;
 	border: solid 0.13vw #ccc;
 	border-radius: 1.04vw;
 	display: flex;
 	flex-direction: column;
+	justify-content: center;
 	align-items: center;
-	padding: 3.65vw 0 0 0;
+
 	cursor: pointer;
 	background-color: #ffffff;
+`;
+
+const MenuLink = styled(Link)`
+	text-decoration: none;
+`;
+
+const MenuA = styled.a`
+	text-decoration: none;
 `;
 
 const MenuLogo = styled.img`
@@ -53,30 +62,30 @@ export default function FastMenu() {
 	return (
 		<MenuContainer>
 			<MenuWrapper>
-				<Menu>
-					<Link to='/usage-info'>
+				<MenuLink to='/usage-info'>
+					<Menu>
 						<MenuLogo alt='' src={infoMenu} />
-					</Link>
-					<MenuTitle>이용안내</MenuTitle>
-				</Menu>
-				<Menu>
-					<Link to='/directions'>
+						<MenuTitle>이용안내</MenuTitle>
+					</Menu>
+				</MenuLink>
+				<MenuLink to='/directions'>
+					<Menu>
 						<MenuLogo alt='' src={trafficMenu} />
-					</Link>
-					<MenuTitle>오시는길</MenuTitle>
-				</Menu>
-				<Menu>
-					<Link to='/guide-map'>
+						<MenuTitle>오시는길</MenuTitle>
+					</Menu>
+				</MenuLink>
+				<MenuLink to='/guide-map'>
+					<Menu>
 						<MenuLogo alt='' src={guideMenu} />
-					</Link>
-					<MenuTitle>가이드맵</MenuTitle>
-				</Menu>
-				<Menu>
-					<a href='https://ottersshop.com/'>
+						<MenuTitle>가이드맵</MenuTitle>
+					</Menu>
+				</MenuLink>
+				<MenuA href='https://ottersshop.com/'>
+					<Menu>
 						<MenuLogo alt='' src={shopMenu} />
-					</a>
-					<MenuTitle>이수달샵</MenuTitle>
-				</Menu>
+						<MenuTitle>이수달샵</MenuTitle>
+					</Menu>
+				</MenuA>
 			</MenuWrapper>
 		</MenuContainer>
 	);
