@@ -47,7 +47,7 @@ const ContentBody = styled.div`
 `;
 
 const GuideMapImg = styled.img`
-	height: auto;
+	display: block;
 	object-fit: contain;
 `;
 
