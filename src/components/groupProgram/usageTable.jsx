@@ -23,6 +23,10 @@ const Th = styled.th`
 	font-weight: 400;
 	font-size: 3.32vw;
 	padding: 2.27vw 0;
+
+	& > span {
+		color: #00939b;
+	}
 `;
 
 const Td = styled.td`
@@ -34,28 +38,34 @@ const Td = styled.td`
 	font-weight: bold;
 `;
 
-export default function TimeTable() {
+export default function UsageTable() {
 	return (
 		<Container>
 			<Table>
 				<colgroup>
-					<col style={{ width: "50%" }} />
-					<col style={{ width: "50%" }} />
+					<col style={{ width: "40%" }} />
+					<col style={{ width: "60%" }} />
 				</colgroup>
 				<Thead>
 					<Tr>
-						<Th>구분</Th>
-						<Th>운영시간</Th>
+						<Th>시간</Th>
+						<Th>관람 방법</Th>
 					</Tr>
 				</Thead>
 				<tbody>
 					<Tr>
-						<Th>평일(목요일 제외)</Th>
-						<Td>13:00 ~ 18:00</Td>
+						<Th>
+							오전 타임 <br />
+							<span>(10시~12시)</span>
+						</Th>
+						<Td>대관 관람 가능</Td>
 					</Tr>
 					<Tr>
-						<Th>주말, 공휴일</Th>
-						<Td>12:30 ~ 19:00</Td>
+						<Th>
+							오후 타임 <br />
+							<span>(13시~18시)</span>
+						</Th>
+						<Td>방문 손님들과 자유롭게 관람 가능</Td>
 					</Tr>
 				</tbody>
 			</Table>

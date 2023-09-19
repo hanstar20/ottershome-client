@@ -18,7 +18,7 @@ const Tr = styled.tr`
 `;
 
 const Th = styled.th`
-	border-bottom: 1px solid #ababab;
+	border-bottom: 0.13vw solid #ababab;
 	font-family: "Pretendard";
 	font-weight: 400;
 	font-size: 3.32vw;
@@ -26,7 +26,7 @@ const Th = styled.th`
 `;
 
 const Td = styled.td`
-	border-bottom: 1px solid #ababab;
+	border-bottom: 0.13vw solid #ababab;
 	text-align: center;
 	font-family: "Pretendard";
 	font-size: 3.02vw;

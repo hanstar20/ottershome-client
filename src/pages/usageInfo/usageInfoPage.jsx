@@ -44,8 +44,24 @@ const ContentTitle = styled.div`
 	}
 `;
 
+const ContentSubNumber = styled.div`
+	margin: 0 7.55vw 2.34vw 7.55vw;
+	font-size: 2.86vw;
+	color: #00939b;
+	margin-bottom: 0.39vw;
+	font-weight: 700;
+	font-family: "Pretendard";
+`;
+
+const ContentSubtitle = styled.div`
+	margin: 0 7.55vw 2.34vw 7.55vw;
+	font-family: "Pretendard";
+	font-weight: bold;
+	font-size: 4.69vw;
+`;
+
 const ContentBody = styled.div`
-	margin: 3.02vw 4.53vw;
+	margin: 0 4.53vw 3.02vw 4.53vw;
 	display: flex;
 	flex-direction: column;
 `;
@@ -71,8 +87,10 @@ export default function usageInformation() {
 	return (
 		<ContentContainer>
 			<ContentWrapper>
-				<ContentTitle>이용요금</ContentTitle>
+				<ContentTitle>이용 요금 & 이용 시간</ContentTitle>
 				<ContentBody>
+					<ContentSubNumber>01</ContentSubNumber>
+					<ContentSubtitle>이용 요금</ContentSubtitle>
 					<FeeTable />
 					<Text>
 						<AddExplain>소인은 24개월 이상 ~ 만 18세까지를 기준으로 합니다.</AddExplain>
@@ -82,9 +100,9 @@ export default function usageInformation() {
 						</AddExplain>
 					</Text>
 				</ContentBody>
-
-				<ContentTitle>이용시간</ContentTitle>
 				<ContentBody>
+					<ContentSubNumber>02</ContentSubNumber>
+					<ContentSubtitle>이용 시간</ContentSubtitle>
 					<TimeTable />
 					<Text>
 						<AddExplain>매주 목요일은 정기휴무 입니다.</AddExplain>

@@ -34,28 +34,38 @@ const Td = styled.td`
 	font-weight: bold;
 `;
 
-export default function TimeTable() {
+export default function BenefitTable() {
 	return (
 		<Container>
 			<Table>
 				<colgroup>
-					<col style={{ width: "50%" }} />
-					<col style={{ width: "50%" }} />
+					<col style={{ width: "15%" }} />
+					<col style={{ width: "25%" }} />
+					<col style={{ width: "60%" }} />
 				</colgroup>
 				<Thead>
 					<Tr>
-						<Th>구분</Th>
-						<Th>운영시간</Th>
+						<Th colSpan={2}>구분</Th>
+						<Th>혜택</Th>
 					</Tr>
 				</Thead>
 				<tbody>
 					<Tr>
-						<Th>평일(목요일 제외)</Th>
-						<Td>13:00 ~ 18:00</Td>
+						<Th rowSpan={2}>요금</Th>
+						<Th>20인 이상</Th>
+						<Td>9,000원</Td>
 					</Tr>
 					<Tr>
-						<Th>주말, 공휴일</Th>
-						<Td>12:30 ~ 19:00</Td>
+						<Th>20인 미만</Th>
+						<Td>10,000원</Td>
+					</Tr>
+					<Tr>
+						<Th colSpan={2}>기념품</Th>
+						<Td>뱃지 1인 1뱃지 제공</Td>
+					</Tr>
+					<Tr>
+						<Th colSpan={2}>동물간식</Th>
+						<Td>체험 인원 별 동물간식 제공</Td>
 					</Tr>
 				</tbody>
 			</Table>
