@@ -2,7 +2,7 @@ import React from "react";
 
 import styled from "styled-components";
 
-import Sample1 from "../../public/assets/img/main/banner_01.png";
+import Sample1 from "../../public/assets/img/main/banner_01.jpeg";
 import Sample2 from "../../public/assets/img/main/banner_02.png";
 import Sample3 from "../../public/assets/img/main/banner_03.png";
 
@@ -36,13 +36,19 @@ export default function ImageSlide() {
 					dynamicBullets: true,
 				}}>
 				<SwiperSlide>
-					<SlideImg src={Sample1}></SlideImg>
+					<a href='https://ottersshop.com/'>
+						<SlideImg src={Sample1}></SlideImg>
+					</a>
 				</SwiperSlide>
 				<SwiperSlide>
-					<SlideImg src={Sample2}></SlideImg>
+					<a href='https://ottersshop.com/'>
+						<SlideImg src={Sample2}></SlideImg>
+					</a>
 				</SwiperSlide>
 				<SwiperSlide>
-					<SlideImg src={Sample3}></SlideImg>
+					<a href='https://ottersshop.com/'>
+						<SlideImg src={Sample3}></SlideImg>
+					</a>
 				</SwiperSlide>
 			</Swiper>
 		</ImageSlideContainer>
