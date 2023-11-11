@@ -99,7 +99,7 @@ export default function Introduction() {
 					<div>이웃집수달</div>
 					<div>
 						<span>수달가족 그리고 동물가족들과 함께 교감하는 특별한 추억!</span>
-						<span>국내유일! 수달과 직접 교감하는 동물원에서 </span>
+						<span>국내 최초! 수달과 직접 교감하는 동물원에서 </span>
 						<span>Youtube 스타 돌체라떼, 모카토피도 만나고 </span>
 						<span>멸종위기종 수달에 대해 함께 배워요</span>
 					</div>
